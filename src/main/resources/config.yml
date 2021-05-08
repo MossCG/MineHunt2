@@ -17,26 +17,26 @@ runner-max: 2
 #如L0Player=2 L0Hunter=1即在总玩家达到2及以上的时候，猎人数为1）
 L0Player: 2
 
-#第零阶梯猎人数量
-L0Hunter: 1
+#第零阶梯逃亡者数量
+L0Runner: 1
 
 #第一阶梯玩家数量
 L1Player: 6
 
-#第一阶梯猎人数量
-L1Hunter: 2
+#第一阶梯逃亡者数量
+L1Runner: 2
 
 #第二阶梯玩家数量
 L2Player: 12
 
-#第二阶梯猎人数量
-L2Hunter: 3
+#第二阶梯逃亡者数量
+L2Runner: 3
 
 #第三阶梯玩家数量
 L3Player: 16
 
-#第三阶梯猎人数量
-L3Hunter: 4
+#第三阶梯逃亡者数量
+L3Runner: 4
 
 #是否开局解锁指南针
 CompassUnlocked: true

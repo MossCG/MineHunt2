@@ -47,14 +47,14 @@ public class Game {
     private final int maxPlayers = plugin.getConfig().getInt("max-players");
     @Getter
     private final int minPlayers = plugin.getConfig().getInt("min-players");
-	private final int L0Player = plugin.getConfig().getInt("L0Runner");
-	private final int L0Hunter = plugin.getConfig().getInt("L0Hunter");
-	private final int L1Player = plugin.getConfig().getInt("L1Runner");
-	private final int L1Hunter = plugin.getConfig().getInt("L1Hunter");
-	private final int L2Player = plugin.getConfig().getInt("L2Runner");
-	private final int L2Hunter = plugin.getConfig().getInt("L2Hunter");
-	private final int L3Player = plugin.getConfig().getInt("L3Runner");
-	private final int L3Hunter = plugin.getConfig().getInt("L3Hunter");
+	private final int L0Player = plugin.getConfig().getInt("L0Player");
+	private final int L0Runner = plugin.getConfig().getInt("L0Runner");
+	private final int L1Player = plugin.getConfig().getInt("L1Player");
+	private final int L1Runner = plugin.getConfig().getInt("L1Runner");
+	private final int L2Player = plugin.getConfig().getInt("L2Player");
+	private final int L2Runner = plugin.getConfig().getInt("L2Runner");
+	private final int L3Player = plugin.getConfig().getInt("L3Player");
+	private final int L3Runner = plugin.getConfig().getInt("L3Runner");
     @Getter
     private boolean CompassUnlocked = plugin.getConfig().getBoolean("CompassUnlocked");
 
@@ -144,18 +144,18 @@ public class Game {
         List<Player> noRolesPlayers = new ArrayList<>(inGamePlayers);
         Map<Player, PlayerRole> roleMapTemp = new HashMap<>();
 
-        int runners = 0;
+        int runners = 1;
 		if (inGamePlayers.size() >= L0Player) {
-            runners = L0Hunter;
+            runners = L0Runner;
         }
 		if (inGamePlayers.size() >= L1Player) {
-            runners = L1Hunter;
+            runners = L1Runner;
         }
 		if (inGamePlayers.size() >= L2Player) {
-            runners = L2Hunter;
+            runners = L2Runner;
         }
 		if (inGamePlayers.size() >= L3Player) {
-            runners = L3Hunter;
+            runners = L3Runner;
         }
 
         for (int i = 0; i < runners; i++) {
