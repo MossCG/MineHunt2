@@ -41,6 +41,17 @@ L3Runner: 4
 #是否开局解锁指南针
 CompassUnlocked: true
 
+#逃亡者X轴偏移（Basic为基础偏移，Random为随机值）
+#实际偏移量为（Basic+Random）
+#如XBasic: 10 XRandom: 20 则实际偏移量为10+(0~20)=10~30中取一个随机数
+XBasic: 5
+XRandom: 10
+
+#逃亡者Y轴偏移（Basic为基础偏移，Random为随机值）
+#计算原理同上
+YBasic: 5
+YRandom: 10
+
 #服务器名称（实际上也就结束统计的时候显示一下）
 ServerName: "MossMC"
 

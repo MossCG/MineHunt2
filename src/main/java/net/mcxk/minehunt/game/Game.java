@@ -55,6 +55,10 @@ public class Game {
 	private final int L2Runner = plugin.getConfig().getInt("L2Runner");
 	private final int L3Player = plugin.getConfig().getInt("L3Player");
 	private final int L3Runner = plugin.getConfig().getInt("L3Runner");
+    private final int XRandom = plugin.getConfig().getInt("XRandom");
+    private final int XBasic = plugin.getConfig().getInt("XBasic");
+    private final int YRandom = plugin.getConfig().getInt("YRandom");
+    private final int YBasic = plugin.getConfig().getInt("YBasic");
     @Getter
     private boolean CompassUnlocked = plugin.getConfig().getBoolean("CompassUnlocked");
 
@@ -351,7 +355,7 @@ public class Game {
         Location loc = spawnpoint.clone();
         loc = new Location(loc.getWorld(), loc.getBlockX(), 0, loc.getBlockZ());
         Random random = new Random();
-        loc.add(random.nextInt(2) + 1, 0, random.nextInt(2) + 1);
+        loc.add(random.nextInt(XRandom) + XBasic, 0, random.nextInt(YRandom) + YBasic);
         loc = loc.getWorld().getHighestBlockAt(loc).getLocation();
         loc.getBlock().setType(Material.GLASS);
         loc.setY(loc.getY() + 1);
