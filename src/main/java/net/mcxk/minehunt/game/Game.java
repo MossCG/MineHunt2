@@ -62,11 +62,6 @@ public class Game {
     @Getter
     private boolean CompassUnlocked = plugin.getConfig().getBoolean("CompassUnlocked");
 
-
-    public Game() {
-        fixConfig();
-    }
-
     public void switchCompass(boolean unlocked) {
         if (this.CompassUnlocked == unlocked) {
             return;
@@ -102,9 +97,6 @@ public class Game {
             return true;
         }
         return false;
-    }
-
-    public void fixConfig() {
     }
 
     public void playerLeaving(Player player) {

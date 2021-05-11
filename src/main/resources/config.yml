@@ -52,6 +52,16 @@ XRandom: 10
 YBasic: 5
 YRandom: 10
 
+#逃亡者警告距离
+#好气哦我看了半天发现原作者把distance写成了distanceSquared
+#也就是原本的是距离xyz的平方和，已修复为正常的距离（应该没问题了）
+#建议合理调整方便猎人生存
+WarnDistance: 50
+
+#逃亡者警告消息(%wd是警告距离就是上面那个，%d是当前距离）
+WarnDistanceSafe: "%wdM 内未检测到猎人"
+WarnDistanceClose: "警告! 猎人正在靠近！当前距离：%dM"
+
 #服务器名称（实际上也就结束统计的时候显示一下）
 ServerName: "MossMC"
 
