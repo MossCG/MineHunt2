@@ -10,6 +10,7 @@ import net.mcxk.minehunt.util.GameEndingData;
 import net.mcxk.minehunt.util.MusicPlayer;
 import net.mcxk.minehunt.util.StatisticsBaker;
 import net.mcxk.minehunt.util.Util;
+//import net.mcxk.minehunt.watcher.CompassWatcher;
 import net.mcxk.minehunt.watcher.PlayerMoveWatcher;
 import net.mcxk.minehunt.watcher.RadarWatcher;
 import net.mcxk.minehunt.watcher.ReconnectWatcher;
@@ -333,6 +334,7 @@ public class Game {
 
     private void registerWatchers() {
         new RadarWatcher();
+//        new CompassWatcher();
         new ReconnectWatcher();
         new PlayerMoveWatcher();
     }

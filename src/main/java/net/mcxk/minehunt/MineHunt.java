@@ -5,14 +5,21 @@ import net.mcxk.minehunt.game.Game;
 import net.mcxk.minehunt.game.GameStatus;
 import net.mcxk.minehunt.game.PlayerRole;
 import net.mcxk.minehunt.listener.*;
+import net.mcxk.minehunt.placeholder.placeholder;
+import net.mcxk.minehunt.util.Util;
 import net.mcxk.minehunt.watcher.CountDownWatcher;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.NotNull;
+import me.clip.placeholderapi.PlaceholderAPI;
+
+import java.util.stream.Collectors;
 
 public final class MineHunt extends JavaPlugin {
     @Getter
@@ -36,6 +43,15 @@ public final class MineHunt extends JavaPlugin {
         instance = this;
         game = new Game();
         countDownWatcher = new CountDownWatcher();
+        Plugin pluginPlaceholderAPI = Bukkit.getPluginManager().getPlugin("PlaceholderAPI");
+        if(pluginPlaceholderAPI != null){
+            System.out.println("检测到PlaceHolderAPI插件，变量功能已启用！");
+            new placeholder(this).register();
+        }
+        Plugin pluginAdvancedReplay = Bukkit.getPluginManager().getPlugin("AdvancedReplay");
+        if(pluginAdvancedReplay != null){
+            System.out.println("检测到AdvancedReplay插件，回放功能已启用！");
+        }
         game.switchWorldRuleForReady(false);
         Bukkit.getPluginManager().registerEvents(new PlayerServerListener(), this);
         Bukkit.getPluginManager().registerEvents(new PlayerInteractListener(), this);
@@ -85,6 +101,12 @@ public final class MineHunt extends JavaPlugin {
         }
         if (args[0].equalsIgnoreCase("resetcountdown") && this.getGame().getStatus() == GameStatus.WAITING_PLAYERS) {
             this.getCountDownWatcher().resetCountdown();
+            return true;
+        }
+        if (args[0].equalsIgnoreCase("players") && this.getGame().getStatus() == GameStatus.GAME_STARTED) {
+            Bukkit.broadcastMessage(ChatColor.YELLOW + ">猎人AND逃亡者<");
+            Bukkit.broadcastMessage(ChatColor.RED + "猎人: " + Util.list2String(MineHunt.getInstance().getGame().getPlayersAsRole(PlayerRole.HUNTER).stream().map(Player::getName).collect(Collectors.toList())));
+            Bukkit.broadcastMessage(ChatColor.GREEN + "逃亡者: " + Util.list2String(MineHunt.getInstance().getGame().getPlayersAsRole(PlayerRole.RUNNER).stream().map(Player::getName).collect(Collectors.toList())));
             return true;
         }
         if (args[0].equalsIgnoreCase("forcestart") && this.getGame().getStatus() == GameStatus.WAITING_PLAYERS) {

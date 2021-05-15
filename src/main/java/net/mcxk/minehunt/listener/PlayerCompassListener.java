@@ -6,7 +6,6 @@ import net.mcxk.minehunt.game.PlayerRole;
 import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.ChatMessageType;
 import net.md_5.bungee.api.chat.TextComponent;
-import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.Material;
 import org.bukkit.World;
@@ -18,7 +17,6 @@ import org.bukkit.event.block.Action;
 import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.inventory.CraftItemEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.event.player.PlayerRespawnEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.CompassMeta;
@@ -110,8 +108,7 @@ public class PlayerCompassListener implements Listener {
                 compassMeta.setLodestone(closestRunner.getLocation());
                 compassMeta.setLodestoneTracked(false); //如果为true，则目标位置必须有Lodestone才有效；因此设为false 这貌似也是ManiHunt中的一个BUG
                 event.getItem().setItemMeta(compassMeta);
-            }
-            event.getPlayer().spigot().sendMessage(ChatMessageType.ACTION_BAR, component);
+            }event.getPlayer().spigot().sendMessage(ChatMessageType.ACTION_BAR, component);
         }
     }
 }
