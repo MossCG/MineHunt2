@@ -1,5 +1,5 @@
 name: MineHunt
-version: 2.1.6
+version: 2.1.7
 main: net.mcxk.minehunt.MineHunt
 api-version: 1.16
 soft-depend: [ NoteBlockAPI, AdvancedReplay, PlaceholderAPI ]

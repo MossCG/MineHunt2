@@ -31,8 +31,6 @@ public class Game {
     @Getter
     private final Set<Player> inGamePlayers = Sets.newCopyOnWriteArraySet(); //线程安全
     @Getter
-    private final int countdown = 30;
-    @Getter
     private final Map<Player, Long> reconnectTimer = new HashMap<>();
     @Getter
     private final GameProgressManager progressManager = new GameProgressManager();
@@ -47,6 +45,7 @@ public class Game {
     @Getter
     private final int maxPlayers = plugin.getConfig().getInt("max-players");
     @Getter
+    private final int countdown = plugin.getConfig().getInt("Countdown");
     private final int minPlayers = plugin.getConfig().getInt("min-players");
 	private final int L0Player = plugin.getConfig().getInt("L0Player");
 	private final int L0Runner = plugin.getConfig().getInt("L0Runner");
@@ -60,6 +59,7 @@ public class Game {
     private final int XBasic = plugin.getConfig().getInt("XBasic");
     private final int YRandom = plugin.getConfig().getInt("YRandom");
     private final int YBasic = plugin.getConfig().getInt("YBasic");
+    private final boolean AutoRestart = plugin.getConfig().getBoolean("AutoRestart");
     @Getter
     private boolean CompassUnlocked = plugin.getConfig().getBoolean("CompassUnlocked");
 
@@ -329,7 +329,9 @@ public class Game {
         Bukkit.getOnlinePlayers().forEach(p -> p.sendTitle(ChatColor.GREEN + plugin.getConfig().getString("ServerName"), plugin.getConfig().getString("ServerGame"), 0, 20000, 0));
         Thread.sleep(sleep);
         Bukkit.getOnlinePlayers().forEach(Player::resetTitle);
-        Bukkit.shutdown();
+        if (AutoRestart) {
+            Bukkit.shutdown();
+        }
     }
 
     private void registerWatchers() {
@@ -354,5 +356,9 @@ public class Game {
         loc.getBlock().setType(Material.GLASS);
         loc.setY(loc.getY() + 1);
         return loc;
+    }
+
+    public int getMinPlayers() {
+        return minPlayers;
     }
 }

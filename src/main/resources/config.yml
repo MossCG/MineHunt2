@@ -41,6 +41,9 @@ L3Runner: 4
 #是否开局解锁指南针
 CompassUnlocked: true
 
+#是否结束游戏自动重启
+AutoRestart: true
+
 #逃亡者X轴偏移（Basic为基础偏移，Random为随机值）
 #实际偏移量为（Basic+Random）
 #如XBasic: 10 XRandom: 20 则实际偏移量为10+(0~20)=10~30中取一个随机数
@@ -57,6 +60,9 @@ YRandom: 10
 #也就是原本的是距离xyz的平方和，已修复为正常的距离（应该没问题了）
 #建议合理调整方便猎人生存
 WarnDistance: 50
+
+#开局倒计时时长
+Countdown: 30
 
 #逃亡者警告消息(%wd是警告距离就是上面那个，%d是当前距离）
 WarnDistanceSafe: "%wdM 内未检测到猎人"
