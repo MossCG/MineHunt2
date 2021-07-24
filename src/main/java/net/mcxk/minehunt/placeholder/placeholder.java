@@ -69,6 +69,9 @@ public class placeholder extends PlaceholderExpansion {
             if (role.get() == PlayerRole.RUNNER) {
                 return (ChatColor.GREEN + plugin.getConfig().getString("RunnerName"));
             }
+            if (role.get() == PlayerRole.WAITING) {
+                return (ChatColor.GRAY + plugin.getConfig().getString("WaitingName"));
+            }
             return (ChatColor.GRAY + plugin.getConfig().getString("ObserverName"));
         }
         return null;

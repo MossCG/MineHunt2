@@ -1,109 +1,112 @@
-# æœ¬æ’ä»¶ç‰ˆæœ¬ä¸ºMossCGçžŽæ”¹æ”¹å‡ºæ¥çš„
-# åŽŸæœ¬æ˜¯ç»™MossMCç¾¤ç»„å•ç‹¬ä¿®æ”¹çš„ä½†æ˜¯æƒ³äº†æƒ³å°±å‘å¸ƒå¼€æºäº†
-# æ¬¢è¿Žæ¥å¢¨å®ˆçš„ç¾¤é‡Œåé¦ˆbugï¼š779291908
-# ä¸€èˆ¬ä¼šåœ¨2å¤©å†…ä¿®å¤ï¼ˆé™¤éžæˆ‘æ‡’ï¼‰
-# ä¸‹é¢æ˜¯æ’ä»¶é…ç½®æ–‡ä»¶www~
+# ±¾²å¼þ°æ±¾ÎªMossCGÏ¹¸Ä¸Ä³öÀ´µÄ
+# Ô­±¾ÊÇ¸øMossMCÈº×éµ¥¶ÀÐÞ¸ÄµÄµ«ÊÇÏëÁËÏë¾Í·¢²¼¿ªÔ´ÁË
+# »¶Ó­À´Ä«ÊØµÄÈºÀï·´À¡bug£º779291908
+# Ò»°ã»áÔÚ2ÌìÄÚÐÞ¸´£¨³ý·ÇÎÒÀÁ£©
+# ÏÂÃæÊÇ²å¼þÅäÖÃÎÄ¼þwww~
 
-#æœ¬å±€æœ€å¤§çŽ©å®¶æ•°
+#±¾¾Ö×î´óÍæ¼ÒÊý
 max-players: 16
 
-#æœ¬å±€æœ€å°çŽ©å®¶æ•°ï¼ˆä¸è¾¾åˆ°è¿™ä¸ªæ•°é‡ä¸ä¼šå¼€å±€ï¼‰
+#±¾¾Ö×îÐ¡Íæ¼ÒÊý£¨²»´ïµ½Õâ¸öÊýÁ¿²»»á¿ª¾Ö£©
 min-players: 2
 
-#æœ¬å±€æœ€å¤§Runneræ•°ï¼ˆè¿™ä¸œè¥¿æˆ‘åŸºæœ¬ç”¨ä¸åˆ°äº†ä½†æ˜¯è¿˜æ˜¯ä¸æ•¢åˆ å…å¾—å‡ºé—®é¢˜ï¼‰
+#±¾¾Ö×î´óRunnerÊý£¨Õâ¶«Î÷ÎÒ»ù±¾ÓÃ²»µ½ÁËµ«ÊÇ»¹ÊÇ²»¸ÒÉ¾ÃâµÃ³öÎÊÌâ£©
 runner-max: 2
 
-#ç¬¬é›¶é˜¶æ¢¯çŽ©å®¶æ•°é‡ï¼ˆå¤§äºŽç­‰äºŽè¯¥æ•°é‡Runnerä¼šè®¾ç½®å¯¹åº”é˜¶æ¢¯æ•°é‡ï¼Œä¸‹åŒï¼‰
-#å¦‚L0Player=2 L0Hunter=1å³åœ¨æ€»çŽ©å®¶è¾¾åˆ°2åŠä»¥ä¸Šçš„æ—¶å€™ï¼ŒçŒŽäººæ•°ä¸º1ï¼‰
+#µÚÁã½×ÌÝÍæ¼ÒÊýÁ¿£¨´óÓÚµÈÓÚ¸ÃÊýÁ¿Runner»áÉèÖÃ¶ÔÓ¦½×ÌÝÊýÁ¿£¬ÏÂÍ¬£©
+#ÈçL0Player=2 L0Hunter=1¼´ÔÚ×ÜÍæ¼Ò´ïµ½2¼°ÒÔÉÏµÄÊ±ºò£¬ÁÔÈËÊýÎª1£©
 L0Player: 2
 
-#ç¬¬é›¶é˜¶æ¢¯é€ƒäº¡è€…æ•°é‡
+#µÚÁã½×ÌÝÌÓÍöÕßÊýÁ¿
 L0Runner: 1
 
-#ç¬¬ä¸€é˜¶æ¢¯çŽ©å®¶æ•°é‡
+#µÚÒ»½×ÌÝÍæ¼ÒÊýÁ¿
 L1Player: 6
 
-#ç¬¬ä¸€é˜¶æ¢¯é€ƒäº¡è€…æ•°é‡
+#µÚÒ»½×ÌÝÌÓÍöÕßÊýÁ¿
 L1Runner: 2
 
-#ç¬¬äºŒé˜¶æ¢¯çŽ©å®¶æ•°é‡
+#µÚ¶þ½×ÌÝÍæ¼ÒÊýÁ¿
 L2Player: 12
 
-#ç¬¬äºŒé˜¶æ¢¯é€ƒäº¡è€…æ•°é‡
+#µÚ¶þ½×ÌÝÌÓÍöÕßÊýÁ¿
 L2Runner: 3
 
-#ç¬¬ä¸‰é˜¶æ¢¯çŽ©å®¶æ•°é‡
+#µÚÈý½×ÌÝÍæ¼ÒÊýÁ¿
 L3Player: 16
 
-#ç¬¬ä¸‰é˜¶æ¢¯é€ƒäº¡è€…æ•°é‡
+#µÚÈý½×ÌÝÌÓÍöÕßÊýÁ¿
 L3Runner: 4
 
-#æ˜¯å¦å¼€å±€è§£é”æŒ‡å—é’ˆ
+#ÊÇ·ñ¿ª¾Ö½âËøÖ¸ÄÏÕë
 CompassUnlocked: true
 
-#æ˜¯å¦ç»“æŸæ¸¸æˆè‡ªåŠ¨é‡å¯
+#ÊÇ·ñ½áÊøÓÎÏ·×Ô¶¯ÖØÆô
 AutoRestart: true
 
-#é€ƒäº¡è€…Xè½´åç§»ï¼ˆBasicä¸ºåŸºç¡€åç§»ï¼ŒRandomä¸ºéšæœºå€¼ï¼‰
-#å®žé™…åç§»é‡ä¸ºï¼ˆBasic+Randomï¼‰
-#å¦‚XBasic: 10 XRandom: 20 åˆ™å®žé™…åç§»é‡ä¸º10+(0~20)=10~30ä¸­å–ä¸€ä¸ªéšæœºæ•°
+#ÌÓÍöÕßXÖáÆ«ÒÆ£¨BasicÎª»ù´¡Æ«ÒÆ£¬RandomÎªËæ»úÖµ£©
+#Êµ¼ÊÆ«ÒÆÁ¿Îª£¨Basic+Random£©
+#ÈçXBasic: 10 XRandom: 20 ÔòÊµ¼ÊÆ«ÒÆÁ¿Îª10+(0~20)=10~30ÖÐÈ¡Ò»¸öËæ»úÊý
 XBasic: 5
 XRandom: 10
 
-#é€ƒäº¡è€…Yè½´åç§»ï¼ˆBasicä¸ºåŸºç¡€åç§»ï¼ŒRandomä¸ºéšæœºå€¼ï¼‰
-#è®¡ç®—åŽŸç†åŒä¸Š
+#ÌÓÍöÕßYÖáÆ«ÒÆ£¨BasicÎª»ù´¡Æ«ÒÆ£¬RandomÎªËæ»úÖµ£©
+#¼ÆËãÔ­ÀíÍ¬ÉÏ
 YBasic: 5
 YRandom: 10
 
-#é€ƒäº¡è€…è­¦å‘Šè·ç¦»
-#å¥½æ°”å“¦æˆ‘çœ‹äº†åŠå¤©å‘çŽ°åŽŸä½œè€…æŠŠdistanceå†™æˆäº†distanceSquared
-#ä¹Ÿå°±æ˜¯åŽŸæœ¬çš„æ˜¯è·ç¦»xyzçš„å¹³æ–¹å’Œï¼Œå·²ä¿®å¤ä¸ºæ­£å¸¸çš„è·ç¦»ï¼ˆåº”è¯¥æ²¡é—®é¢˜äº†ï¼‰
-#å»ºè®®åˆç†è°ƒæ•´æ–¹ä¾¿çŒŽäººç”Ÿå­˜
+#ÌÓÍöÕß¾¯¸æ¾àÀë
+#ºÃÆøÅ¶ÎÒ¿´ÁË°ëÌì·¢ÏÖÔ­×÷Õß°ÑdistanceÐ´³ÉÁËdistanceSquared
+#Ò²¾ÍÊÇÔ­±¾µÄÊÇ¾àÀëxyzµÄÆ½·½ºÍ£¬ÒÑÐÞ¸´ÎªÕý³£µÄ¾àÀë£¨Ó¦¸ÃÃ»ÎÊÌâÁË£©
+#½¨ÒéºÏÀíµ÷Õû·½±ãÁÔÈËÉú´æ
 WarnDistance: 50
 
-#å¼€å±€å€’è®¡æ—¶æ—¶é•¿
+#¿ª¾Öµ¹¼ÆÊ±Ê±³¤
 Countdown: 30
 
-#é€ƒäº¡è€…è­¦å‘Šæ¶ˆæ¯(%wdæ˜¯è­¦å‘Šè·ç¦»å°±æ˜¯ä¸Šé¢é‚£ä¸ªï¼Œ%dæ˜¯å½“å‰è·ç¦»ï¼‰
-WarnDistanceSafe: "%wdM å†…æœªæ£€æµ‹åˆ°çŒŽäºº"
-WarnDistanceClose: "è­¦å‘Š! çŒŽäººæ­£åœ¨é è¿‘ï¼å½“å‰è·ç¦»ï¼š%dM"
+#ÌÓÍöÕß¾¯¸æÏûÏ¢(%wdÊÇ¾¯¸æ¾àÀë¾ÍÊÇÉÏÃæÄÇ¸ö£¬%dÊÇµ±Ç°¾àÀë£©
+WarnDistanceSafe: "%wdM ÄÚÎ´¼ì²âµ½ÁÔÈË"
+WarnDistanceClose: "¾¯¸æ! ÁÔÈËÕýÔÚ¿¿½ü£¡µ±Ç°¾àÀë£º%dM"
 
-#æœåŠ¡å™¨åç§°ï¼ˆå®žé™…ä¸Šä¹Ÿå°±ç»“æŸç»Ÿè®¡çš„æ—¶å€™æ˜¾ç¤ºä¸€ä¸‹ï¼‰
+#·þÎñÆ÷Ãû³Æ£¨Êµ¼ÊÉÏÒ²¾Í½áÊøÍ³¼ÆµÄÊ±ºòÏÔÊ¾Ò»ÏÂ£©
 ServerName: "MossMC"
 
-#æ¸¸æˆåç§°ï¼ˆå®žé™…ä¸Šä¹ŸåŒæ ·å°±ç»“æŸç»Ÿè®¡çš„æ—¶å€™æ˜¾ç¤ºä¸€ä¸‹ï¼‰
-ServerGame: "çŒŽäººæ¸¸æˆ"
+#ÓÎÏ·Ãû³Æ£¨Êµ¼ÊÉÏÒ²Í¬Ñù¾Í½áÊøÍ³¼ÆµÄÊ±ºòÏÔÊ¾Ò»ÏÂ£©
+ServerGame: "ÁÔÈËÓÎÏ·"
 
-#è§‚æˆ˜çŽ©å®¶åå­—å‰ç¼€
-ObserverName: "[åƒç“œ]"
+#¹ÛÕ½Íæ¼ÒÃû×ÖÇ°×º
+ObserverName: "[³Ô¹Ï]"
 
-#è¿½æ€è€…çŽ©å®¶åå­—å‰ç¼€
-HunterName: "[çŒŽäºº]"
+#×·É±ÕßÍæ¼ÒÃû×ÖÇ°×º
+HunterName: "[ÁÔÈË]"
 
-#é€ƒäº¡è€…çŽ©å®¶åå­—å‰ç¼€
-RunnerName: "[é€ƒäº¡è€…]"
+#ÌÓÍöÕßÍæ¼ÒÃû×ÖÇ°×º
+RunnerName: "[ÌÓÍöÕß]"
 
-#ç»Ÿè®¡å±•ç¤ºçš„å‡»æ€é¾™çš„çŽ©å®¶
-DragonKiller: "å± é¾™å‹‡å£«"
+#µÈ´ýÖÐÍæ¼ÒÃû×ÖÇ°×º
+WaitingName: "[µÈ´ýÖÐ]"
 
-#ç»Ÿè®¡å±•ç¤ºçš„å‡»æ€é€ƒäº¡è€…çš„çŽ©å®¶
-RunnerKiller: "æœ€ä½³çŒŽäºº"
+#Í³¼ÆÕ¹Ê¾µÄ»÷É±ÁúµÄÍæ¼Ò
+DragonKiller: "ÍÀÁúÓÂÊ¿"
 
-#ç»Ÿè®¡å±•ç¤ºçš„å¯¹ä»»ä½•å®žä½“è¾“å‡ºä¼¤å®³æœ€å¤šçš„çŽ©å®¶
-DamageOutPut: "æœ€ä½³è¾“å‡º"
+#Í³¼ÆÕ¹Ê¾µÄ»÷É±ÌÓÍöÕßµÄÍæ¼Ò
+RunnerKiller: "×î¼ÑÁÔÈË"
 
-#ç»Ÿè®¡å±•ç¤ºçš„å—åˆ°ä¼¤å®³æœ€å¤šçš„çŽ©å®¶
-DamageReceive: "æœ€æƒ¨é¶å­"
+#Í³¼ÆÕ¹Ê¾µÄ¶ÔÈÎºÎÊµÌåÊä³öÉËº¦×î¶àµÄÍæ¼Ò
+DamageOutPut: "×î¼ÑÊä³ö"
 
-#ç»Ÿè®¡å±•ç¤ºçš„å¯¹é˜Ÿå‹è¾“å‡ºæœ€å¤šçš„çŽ©å®¶
-TeamKiller: "é˜Ÿå‹æ€æ‰‹"
+#Í³¼ÆÕ¹Ê¾µÄÊÜµ½ÉËº¦×î¶àµÄÍæ¼Ò
+DamageReceive: "×î²Ò°Ð×Ó"
 
-#ç»Ÿè®¡å±•ç¤ºçš„ç§»åŠ¨è·ç¦»æœ€å¤šçš„çŽ©å®¶
-WalkMaster: "å¤§æ—…è¡Œè€…"
+#Í³¼ÆÕ¹Ê¾µÄ¶Ô¶ÓÓÑÊä³ö×î¶àµÄÍæ¼Ò
+TeamKiller: "¶ÓÓÑÉ±ÊÖ"
 
-#ç»Ÿè®¡å±•ç¤ºçš„è·³è·ƒæ¬¡æ•°æœ€å¤šçš„çŽ©å®¶
-JumpMaster: "è¹¦è¿ªå¤§å¸ˆ"
+#Í³¼ÆÕ¹Ê¾µÄÒÆ¶¯¾àÀë×î¶àµÄÍæ¼Ò
+WalkMaster: "´óÂÃÐÐÕß"
 
-#ç»Ÿè®¡å±•ç¤ºç»“æŸåŽçš„ç»“è¯­
-EndText1: "æ„Ÿè°¢æ¸¸çŽ©"
+#Í³¼ÆÕ¹Ê¾µÄÌøÔ¾´ÎÊý×î¶àµÄÍæ¼Ò
+JumpMaster: "±ÄµÏ´óÊ¦"
+
+#Í³¼ÆÕ¹Ê¾½áÊøºóµÄ½áÓï
+EndText1: "¸ÐÐ»ÓÎÍæ"
 EndText2: "Thanks for playing!"
