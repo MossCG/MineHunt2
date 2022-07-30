@@ -1,5 +1,8 @@
 # MineHunt2
 
+此插件已弃坑 最新版本：
+https://github.com/MoBoxMC/MoBoxHunter
+
 这是一个完全开源的MineHunt分支 
 
 遵循GPLV3协议 
